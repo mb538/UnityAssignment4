@@ -39,6 +39,7 @@ public class MenuController : MonoBehaviour
         {
             EventSystem.current.SetSelectedGameObject(null);
             FreezeGame();
+            ShowCanvas();
         }
 
     }
@@ -56,7 +57,6 @@ public class MenuController : MonoBehaviour
         gamePaused = true;
         AudioListener.pause = true;
         Time.timeScale = 0;
-        ShowCanvas();
     }
 
     public void RestartGame()

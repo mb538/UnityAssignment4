@@ -46,7 +46,6 @@ public class GameController : MonoBehaviour
     
     private void GameLost()
     {
-        print("Current Score: " + wc.getWaveNumber());
         LoadHighscore();
         if(wc.getWaveNumber() > highscore)
         {
